@@ -1,6 +1,8 @@
 # mtl-transformations
 Code for "Structure Here, Bias There: Hierarchical Generalization by Jointly Learning Syntactic Transformations." The paper is available [here](https://arxiv.org). This code was largely adapated from the paper ["Does syntax need to grow on trees? Sources of hierarchical inductive bias in sequence to sequence networks"](https://www.mitpressjournals.org/doi/pdf/10.1162/tacl_a_00304) ([repo](https://github.com/tommccoy1/rnn-hierarchical-biases)). 
 
+Larger files, such as the datasets, models, and results files (with accompanying R notebook used for analysis and generating figures) can be downloaded separately at our OSF project site: https://osf.io/yrq3j/ 
+
 ## Requirements
 This code was run using PyTorch version 0.4.1 with a GPU.
 
@@ -18,7 +20,7 @@ Some expansion rules contain tags indicating subject and object boundaries, whic
 
 ### Datasets
 
-The datasets for the first experiments (Section 4, dataset described in Section 3.2) ~~are already available in `data/` ~~ are avilable at [our OSF project website](https://osf.io/yrq3j/) due to size constraints. The naming convention is as follows: `targettask_sidetask_sidetaskrule.set`. For example, target task question formation with side task passivization using hierarchical rule MOVE-PATIENT uses `question_passive_patient.train` as a training set. For the full list of transformations and their hierarchical and linear rules, refer to Section 3.1. There are four sets per task combination: a training set, a development set, an in-distribution test set, and an out-of-distribution generalization set.
+The datasets for the first experiments (Section 4, dataset described in Section 3.2) ~~are already available in `data/`~~ are avilable at [our OSF project website](https://osf.io/yrq3j/), due to size constraints. The naming convention is as follows: `targettask_sidetask_sidetaskrule.set`. For example, target task question formation with side task passivization using hierarchical rule MOVE-PATIENT uses `question_passive_patient.train` as a training set. For the full list of transformations and their hierarchical and linear rules, refer to Section 3.1. There are four sets per task combination: a training set, a development set, an in-distribution test set, and an out-of-distribution generalization set.
 
 #### Dataset generation
 To generate the datasets yourself, you can run `generation/make_sets.py`, which takes 3 arguments: the name of the `.raw` file containing many samples of input sentences generated from the PCFG, one of three transformations (`passive`, `question`, `tense`), and whether the sentences are all ambiguous between linear and hierarchical rules (`amb`), containing unambiguous evidence for a hierarchical rule (`unamb`), or containing unambiguous evidence for a linear rule (`unamb_lin`). 
