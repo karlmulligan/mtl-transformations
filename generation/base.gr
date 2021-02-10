@@ -1,0 +1,127 @@
+1	ROOT	S .
+
+1	S	[Subj] NP_M_S [Subj] VP_M_S
+1	S	[Subj] NP_M_P [Subj] VP_M_P
+
+1	NP_M_S	DP_S
+1	NP_M_S	DP_S PP
+1	NP_M_S	DP_S RC_S
+
+1	NP_M_P	DP_P
+1	NP_M_P	DP_P PP
+1	NP_M_P	DP_P RC_P
+
+1	NP_O	[Obj_S] DP_S [Obj_S]
+1	NP_O	[Obj_P] DP_P [Obj_P]
+1	NP_O	[Obj_S] DP_S PP [Obj_S]
+1	NP_O	[Obj_P] DP_P PP [Obj_P]
+1	NP_O	[Obj_S] DP_S RC_S [Obj_S] 
+1	NP_O	[Obj_P] DP_P RC_P [Obj_P]
+
+1	DP		DP_S 
+1	DP		DP_P
+
+1	DP_S	Det N_S
+1	DP_S	Det ADJP_S 
+
+1	DP_P	Det N_P
+1	DP_P	Det ADJP_P
+
+3	ADJP_S	 Adj N_S
+2	ADJP_S	 Adj Adj N_S
+1	ADJP_S	 Adj Adj Adj N_S
+
+3	ADJP_P	 Adj N_P
+2	ADJP_P	 Adj Adj N_P
+1	ADJP_P	 Adj Adj Adj N_P
+
+1	N	N_S
+1	N	N_P
+
+1	VP_M_S	Aux_S V_trans NP_O
+
+1	VP_M_P	Aux_P V_trans NP_O
+
+1	PP	Prep DP
+1	PP	Prep DP
+
+1	RC_S	Rel DP_S Aux_S V_trans
+1	RC_S	Rel DP_P Aux_P V_trans
+2	RC_S	Rel Aux_S V_trans DP
+
+1	RC_P	Rel DP_S Aux_S V_trans
+1	RC_P	Rel DP_P Aux_P V_trans
+2	RC_P	Rel Aux_P V_trans DP
+
+1	Aux_S	does
+1	Aux_S	doesn't
+
+1	Aux_P	do
+1	Aux_P	don't
+
+1	Prep	around
+1	Prep	near
+1	Prep	with
+1	Prep	upon
+1	Prep	alongside
+1	Prep	behind
+1	Prep	above
+1	Prep	below
+
+1	Rel	who
+1	Rel	that
+
+1	Det	the
+1	Det	some
+1	Det	my
+1	Det	your
+1	Det	our
+1	Det	her
+
+1	Adj	agreeable
+1	Adj	bewildered
+1	Adj	courageous
+1	Adj	determined
+1	Adj	exuberant
+1	Adj	fantastic
+1	Adj	grotesque
+1	Adj	handsome
+
+1	N_S	newt
+1	N_S	orangutan
+1	N_S	peacock
+1	N_S	quail
+1	N_S	raven
+1	N_S	salamander
+1	N_S	tyrannosaurus
+1	N_S	unicorn
+1	N_S	vulture
+1	N_S	walrus
+1	N_S	xylophone
+1	N_S	yak
+1	N_S	zebra
+
+1	N_P	newts
+1	N_P	orangutans
+1	N_P	peacocks
+1	N_P	quails
+1	N_P	ravens
+1	N_P	salamanders
+1	N_P	tyrannosauruses
+1	N_P	unicorns
+1	N_P	vultures
+1	N_P	walruses
+1	N_P	xylophones
+1	N_P	yaks
+1	N_P	zebras
+
+1	V_trans	entertain
+1	V_trans	amuse
+1	V_trans	high_five
+1	V_trans	applaud
+1	V_trans	confuse
+1	V_trans	admire
+1	V_trans	accept
+1	V_trans	remember
+1	V_trans	comfort
+

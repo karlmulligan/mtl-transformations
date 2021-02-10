@@ -1,0 +1,3 @@
+# Ignore because files are too big
+
+/generation/*.raw 
