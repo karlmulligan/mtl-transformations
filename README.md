@@ -1,5 +1,5 @@
 # mtl-transformations
-Code for "Structure Here, Bias There: Hierarchical Generalization by Jointly Learning Syntactic Transformations." The paper is available [here](https://scholarworks.umass.edu/scil/vol4/iss1/13/). 
+Code for ["Structure Here, Bias There: Hierarchical Generalization by Jointly Learning Syntactic Transformations"](https://scholarworks.umass.edu/scil/vol4/iss1/13/), preseted at [SCiL 2021](https://www.scil2021.org). 
 
 This code was largely adapated from the paper ["Does syntax need to grow on trees? Sources of hierarchical inductive bias in sequence to sequence networks"](https://www.mitpressjournals.org/doi/pdf/10.1162/tacl_a_00304) ([repo](https://github.com/tommccoy1/rnn-hierarchical-biases)). 
 
